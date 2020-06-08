@@ -37,8 +37,9 @@ export default class PipelineExecutor<T> {
   private async _revert(index: number) {
     for (let i = index; i >= 0; i--) {
       try {
-        if (this.steps[i].revert) {
-          await this.steps[i].revert(this.context);
+        const step = this.steps[i];
+        if (step.revert) {
+          await step.revert(this.context);
         }
       } catch (e) {
         console.error("failed during reverting:", e);
