@@ -1,4 +1,4 @@
-import IPipelineStep from "./PipelineStep.ts";
+import IPipelineStep from "./PipelineStep";
 
 /**
  * Executor for a pipeline of process steps.
@@ -9,10 +9,7 @@ import IPipelineStep from "./PipelineStep.ts";
  * is raised.
  */
 export default class PipelineExecutor<T> {
-  constructor(
-    public steps: IPipelineStep<T>[],
-    public context: T,
-  ) {}
+  constructor(public steps: IPipelineStep<T>[], public context: T) {}
 
   /**
    * Executes the pipeline.

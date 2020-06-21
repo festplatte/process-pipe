@@ -1,0 +1,25 @@
+{
+  "name": "process-pipe",
+  "version": "0.0.1",
+  "description": "Library for executing pipelines of process steps",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-festplatte:festplatte/process-pipe.git"
+  },
+  "keywords": [
+    "process",
+    "pipeline"
+  ],
+  "author": "festplatte",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "typescript": "^3.9.5"
+  }
+}
